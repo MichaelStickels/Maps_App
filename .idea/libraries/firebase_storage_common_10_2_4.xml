@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="firebase-storage-common-10.2.4">
+    <CLASSES>
+      <root url="jar://C:/tmp/{rootproject.name}/app/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.4/jars/classes.jar!/" />
+      <root url="file://C:/tmp/{rootproject.name}/app/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
