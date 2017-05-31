@@ -60,11 +60,63 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-
     public void myLocation(View v) {
 
 
 
     }
 
+    android.location.LocationListener locationListenerGps = new android.location.LocationListener() {
+        @Override
+        public void onLocationChanged(Location location) {
+            //create a drop marker method
+        }
+
+        @Override
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+
+            //when network change from gps to wifi
+            //
+
+        }
+
+        @Override
+        public void onProviderEnabled(String provider) {
+
+        }
+
+        @Override
+        public void onProviderDisabled(String provider) {
+
+        }
+    };
+
+    android.location.LocationListener locationListenerNetwork = new android.location.LocationListener() {
+
+        @Override
+        public void onLocationChanged(Location location) {
+
+        }
+
+        @Override
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+
+        }
+
+        @Override
+        public void onProviderEnabled(String provider) {
+
+        }
+
+        @Override
+        public void onProviderDisabled(String provider) {
+
+        }
+    };
+
+    public void dropMarker(Location location) {
+
+
+
+    }
 }
