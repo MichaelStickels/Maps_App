@@ -21,9 +21,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My Location"
+            android:text="Track"
             android:id="@+id/button_myLocation"
-            android:onClick="myLocation" />
+            android:onClick="trackbutton" />
     </LinearLayout>
 
 
