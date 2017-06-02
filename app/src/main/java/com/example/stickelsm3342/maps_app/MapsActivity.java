@@ -107,6 +107,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         locationManager.removeUpdates(locationListenerGPS);
         locationManager.removeUpdates(locationListenerNetwork);
+        locationManager = null;
 
     }
 
