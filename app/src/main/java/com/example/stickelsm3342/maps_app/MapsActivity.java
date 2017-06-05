@@ -9,6 +9,7 @@ import android.location.LocationProvider;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -81,6 +82,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+    public void clearMap(View v) {
+
+        mMap.clear();
+
+    }
+
     public void trackbutton(View v) {
 
         if (loctoggle == 0) {
@@ -96,13 +103,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void stoptracking() {
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return;
         }
         locationManager.removeUpdates(locationListenerGPS);
@@ -276,41 +276,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-
-
-//    public void dropMarker(String provider) {
-//
-//        Log.d("message", provider);
-//
-//        if (locationManager != null)
-//            if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//                // TODO: Consider calling
-//                //    ActivityCompat#requestPermissions
-//                // here to request the missing permissions, and then overriding
-//                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-//                //                                          int[] grantResults)
-//                // to handle the case where the user grants the permission. See the documentation
-//                // for ActivityCompat#requestPermissions for more details.
-//                return;
-//            }
-//            myLocation = locationManager.getLastKnownLocation(provider);
-//
-//        if(myLocation == null) {
-//            //display message
-//        } else {
-//
-//            //get user location
-//            userlocation = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
-//
-//            //add marker
-//            CameraUpdate update = CameraUpdateFactory.newLatLngZoom(userlocation, MY_LOC_ZOOM_FACTOR);
-//
-//            //drop the marker
-//            Circle circle = mMap.addCircle(new CircleOptions().center(userlocation).radius(1).strokeColor(Color.RED).strokeWidth(2).fillColor(Color.RED));
-//
-//            mMap.animateCamera(update);
-//
-//        }
-//
-//    }
 }

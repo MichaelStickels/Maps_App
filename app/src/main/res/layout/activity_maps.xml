@@ -24,17 +24,42 @@
             android:text="Track"
             android:id="@+id/button_myLocation"
             android:onClick="trackbutton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/button"
+            android:onClick="clearMap" />
+
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
 
+        <EditText
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_Search"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.92" />
 
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/button_search" />
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/map"
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="392dp"
-    android:layout_height="453dp"
+    android:layout_height="428dp"
     tools:context="com.example.stickelsm3342.maps_app.MapsActivity" />
 
 
