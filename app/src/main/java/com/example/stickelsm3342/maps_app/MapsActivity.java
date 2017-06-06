@@ -14,8 +14,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.places.GeoDataApi;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.Places;
+import com.google.android.gms.location.places.ui.PlaceAutocomplete;
+import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment;
+import com.google.android.gms.location.places.ui.PlaceSelectionListener;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -24,9 +32,13 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.Circle;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
+import android.support.v4.app.FragmentActivity;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, PlaceSelectionListener {
 
 
     private GoogleMap mMap;
@@ -41,17 +53,51 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final long MIN_TIME_BW_UPDATES = 1000 * 15 * 1;
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 5;
     private int loctoggle = 0;
+    private GoogleApiClient mGoogleApiClient;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("hi","worked*******************************************************************************************************************************************************************************");
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        mGoogleApiClient = new GoogleApiClient
+                .Builder(this)
+                .addApi(Places.GEO_DATA_API)
+                .addApi(Places.PLACE_DETECTION_API)
+                .enableAutoManage(this, (OnConnectionFailedListener) this)
+                .build();
+
+        // Retrieve the PlaceAutocompleteFragment.
+        PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
+                getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
+
+        Log.d("hi","worked*******************************************************************************************************************************************************************************");
+        autocompleteFragment.setBoundsBias(new LatLngBounds(
+                new LatLng(myLocation.getLatitude(),myLocation.getLongitude()),
+                new LatLng(myLocation.getLatitude(),myLocation.getLongitude())));
+
+        // Register a listener to receive callbacks when a place has been selected or an error has
+        // occurred.
+        autocompleteFragment.setOnPlaceSelectedListener(this);
+
     }
+
+
+//    public void onConnectionFailed(ConnectionResult result) {
+//        // An unresolvable error has occurred and a connection to Google APIs
+//        // could not be established. Display an error message, or handle
+//        // the failure silently
+//        // ...
+//
+//        Log.d("Places API", "Error - ConnectionFailed");
+//    }
 
 
     @Override
@@ -276,4 +322,38 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+
+    //*************************************************Places API Code**************************************************************
+
+    @Override
+    public void onPlaceSelected(Place place) {
+        Log.d("Place Selected: ", (String) place.getName());
+    }
+
+    @Override
+    public void onError(Status status) {
+        Log.d("onError", "Place Selection Error");
+
+        Toast.makeText(this, "Place selection failed: " + status.getStatusMessage(),
+                Toast.LENGTH_SHORT).show();
+    }
+
+
+
+
+//    PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
+//            getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
+//
+//    autocompleteFragment.setBoundsBias(new LatLngBounds(
+//            new LatLng(-33.880490, 151.184363),
+//
+//    @Override
+//    public void onPlaceSelected(Place place) {
+//         Log.d("onPlaceSelected", place.toString());
+//    }
+//
+//    @Override
+//    public void onError(Status status) {
+//
+//    }
 }

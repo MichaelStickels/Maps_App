@@ -84,6 +84,7 @@
       <sourceFolder url="file://C:/tmp/{rootproject.name}/app/generated/res/resValues/androidTest/debug" type="java-test-resource" />
       <excludeFolder url="file://C:/tmp/{rootproject.name}/app/intermediates/assets" />
       <excludeFolder url="file://C:/tmp/{rootproject.name}/app/intermediates/blame" />
+      <excludeFolder url="file://C:/tmp/{rootproject.name}/app/intermediates/builds" />
       <excludeFolder url="file://C:/tmp/{rootproject.name}/app/intermediates/bundles" />
       <excludeFolder url="file://C:/tmp/{rootproject.name}/app/intermediates/classes" />
       <excludeFolder url="file://C:/tmp/{rootproject.name}/app/intermediates/dependency-cache" />

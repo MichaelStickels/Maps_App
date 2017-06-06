@@ -39,9 +39,21 @@
       <file leaf-file-name="MapsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/stickelsm3342/maps_app/MapsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09214092">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-              <folding />
+            <state vertical-scroll-proportion="0.14325842">
+              <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+              <folding>
+                <element signature="e#4272#4335#0" expanded="false" />
+                <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+                <element signature="class#9230:11031" expanded="false" />
+                <element signature="class#11085:11999" expanded="false" />
+                <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+                <element signature="e#13969#14051#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,8 +64,8 @@
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.653847">
-              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+            <state vertical-scroll-proportion="-18.961538">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -62,9 +74,13 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-4.5">
               <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-              <folding />
+              <folding>
+                <element signature="e#1082#1100#0" expanded="false" />
+                <element signature="e#1865#1890#0" expanded="false" />
+                <element signature="e#1980#2009#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -2075,7 +2091,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4487351681860" />
+        <entry key="$PROJECT_DIR$" value="4487870495441" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2447,9 +2463,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2470,12 +2484,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="2a24cac" />
+    <property name="device.picker.selection" value="3a263c0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../android-samples/tutorials/CurrentPlaceDetailsOnMap" />
@@ -2783,16 +2799,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32369298" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14794216" sideWeight="0.5170576" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14794216" sideWeight="0.48294243" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3070078" sideWeight="0.5191898" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57285875" sideWeight="0.48081023" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2800,7 +2816,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2827,23 +2843,29 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/stickelsm3342/maps_app/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4272#4335#0" expanded="false" />
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#9230:11031" expanded="false" />
+            <element signature="class#11085:11999" expanded="false" />
+            <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#13969#14051#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2862,7 +2884,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#1082#1100#0" expanded="false" />
+            <element signature="e#1865#1890#0" expanded="false" />
+            <element signature="e#1980#2009#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2894,7 +2920,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4272#4335#0" expanded="false" />
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#9230:11031" expanded="false" />
+            <element signature="class#11085:11999" expanded="false" />
+            <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#13969#14051#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2913,7 +2951,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#1082#1100#0" expanded="false" />
+            <element signature="e#1865#1890#0" expanded="false" />
+            <element signature="e#1980#2009#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2945,7 +2987,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#4272#4335#0" expanded="false" />
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#9230:11031" expanded="false" />
+            <element signature="class#11085:11999" expanded="false" />
+            <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#13969#14051#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2964,7 +3018,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#1082#1100#0" expanded="false" />
+            <element signature="e#1865#1890#0" expanded="false" />
+            <element signature="e#1980#2009#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2996,7 +3054,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#4272#4335#0" expanded="false" />
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#9230:11031" expanded="false" />
+            <element signature="class#11085:11999" expanded="false" />
+            <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#13969#14051#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3015,7 +3085,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#1082#1100#0" expanded="false" />
+            <element signature="e#1865#1890#0" expanded="false" />
+            <element signature="e#1980#2009#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3047,7 +3121,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4272#4335#0" expanded="false" />
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#9230:11031" expanded="false" />
+            <element signature="class#11085:11999" expanded="false" />
+            <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#13969#14051#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3066,7 +3152,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#1082#1100#0" expanded="false" />
+            <element signature="e#1865#1890#0" expanded="false" />
+            <element signature="e#1980#2009#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3098,7 +3188,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#4272#4335#0" expanded="false" />
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#9230:11031" expanded="false" />
+            <element signature="class#11085:11999" expanded="false" />
+            <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#13969#14051#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3117,7 +3219,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1082#1100#0" expanded="false" />
+            <element signature="e#1865#1890#0" expanded="false" />
+            <element signature="e#1980#2009#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3149,7 +3255,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#4272#4335#0" expanded="false" />
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#9230:11031" expanded="false" />
+            <element signature="class#11085:11999" expanded="false" />
+            <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#13969#14051#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3168,7 +3286,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-          <folding />
+          <folding>
+            <element signature="e#1082#1100#0" expanded="false" />
+            <element signature="e#1865#1890#0" expanded="false" />
+            <element signature="e#1980#2009#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3192,22 +3314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3236,8 +3342,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-4.5">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#1082#1100#0" expanded="false" />
+            <element signature="e#1865#1890#0" expanded="false" />
+            <element signature="e#1980#2009#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/tmp/{rootproject.name}/app/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.4/jars/classes.jar!/com/google/android/gms/location/places/ui/PlaceSelectionListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17122301">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -3247,17 +3381,29 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.653847">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        <state vertical-scroll-proportion="-18.961538">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/stickelsm3342/maps_app/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09214092">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding />
+        <state vertical-scroll-proportion="0.14325842">
+          <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+          <folding>
+            <element signature="e#4272#4335#0" expanded="false" />
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#9230:11031" expanded="false" />
+            <element signature="class#11085:11999" expanded="false" />
+            <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#13969#14051#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

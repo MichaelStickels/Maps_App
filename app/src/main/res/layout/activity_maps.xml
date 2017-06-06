@@ -37,20 +37,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:orientation="horizontal">
 
-        <EditText
-            android:layout_width="259dp"
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText_Search"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.92" />
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Search"
-            android:id="@+id/button_search" />
+        <!--<EditText-->
+            <!--android:layout_width="259dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/editText_Search"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_weight="0.92" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Search"-->
+            <!--android:id="@+id/button_search" />-->
     </LinearLayout>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
