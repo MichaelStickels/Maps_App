@@ -60,6 +60,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("hi","worked*******************************************************************************************************************************************************************************");
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -77,9 +78,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
                 getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
 
-//        autocompleteFragment.setBoundsBias(new LatLngBounds(
-//                new LatLng(myLocation.getLatitude(),myLocation.getLongitude()),
-//                new LatLng(myLocation.getLatitude(),myLocation.getLongitude())));
+        Log.d("hi","worked*******************************************************************************************************************************************************************************");
+        autocompleteFragment.setBoundsBias(new LatLngBounds(
+                new LatLng(myLocation.getLatitude(),myLocation.getLongitude()),
+                new LatLng(myLocation.getLatitude(),myLocation.getLongitude())));
 
         // Register a listener to receive callbacks when a place has been selected or an error has
         // occurred.
@@ -291,7 +293,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         if(myLocation == null){
             //display a message
-            Log.d("dropGPSMarker", "error");
         }
         else{
             userlocation = new LatLng(myLocation.getLatitude(),myLocation.getLongitude());
@@ -311,7 +312,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         if(myLocation == null){
             //display a message
-            Log.d("dropGPSMarker", "error");
         }
         else{
             userlocation = new LatLng(myLocation.getLatitude(),myLocation.getLongitude());
