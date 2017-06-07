@@ -60,7 +60,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("hi","worked*******************************************************************************************************************************************************************************");
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -78,7 +77,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
                 getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
 
-        Log.d("hi","worked*******************************************************************************************************************************************************************************");
+
         autocompleteFragment.setBoundsBias(new LatLngBounds(
                 new LatLng(myLocation.getLatitude(),myLocation.getLongitude()),
                 new LatLng(myLocation.getLatitude(),myLocation.getLongitude())));
