@@ -6,6 +6,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.location.LocationProvider;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -38,7 +39,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
 import android.support.v4.app.FragmentActivity;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, PlaceSelectionListener {
+
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, OnConnectionFailedListener, PlaceSelectionListener {
 
 
     private GoogleMap mMap;
@@ -46,7 +48,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LatLng userlocation = null;
     private LocationManager locationManager;
     private Location myLocation;
-    private static final int MY_LOC_ZOOM_FACTOR = 15;
+    private static final int MY_LOC_ZOOM_FACTOR = 17;
     private boolean isGPSEnabled = false;
     private boolean isNetworkEnabled = false;
     private boolean canGetLocation;
@@ -54,7 +56,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 5;
     private int loctoggle = 0;
     private GoogleApiClient mGoogleApiClient;
-
+    PlaceAutocompleteFragment autocompleteFragment;
 
 
     @Override
@@ -66,21 +68,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+
         mGoogleApiClient = new GoogleApiClient
                 .Builder(this)
                 .addApi(Places.GEO_DATA_API)
                 .addApi(Places.PLACE_DETECTION_API)
-                .enableAutoManage(this, (OnConnectionFailedListener) this)
+                .enableAutoManage(this, this)
                 .build();
 
+
         // Retrieve the PlaceAutocompleteFragment.
-        PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
+        autocompleteFragment = (PlaceAutocompleteFragment)
                 getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
 
 
-        autocompleteFragment.setBoundsBias(new LatLngBounds(
-                new LatLng(myLocation.getLatitude(),myLocation.getLongitude()),
-                new LatLng(myLocation.getLatitude(),myLocation.getLongitude())));
+
 
         // Register a listener to receive callbacks when a place has been selected or an error has
         // occurred.
@@ -89,14 +91,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
-//    public void onConnectionFailed(ConnectionResult result) {
-//        // An unresolvable error has occurred and a connection to Google APIs
-//        // could not be established. Display an error message, or handle
-//        // the failure silently
-//        // ...
-//
-//        Log.d("Places API", "Error - ConnectionFailed");
-//    }
 
 
     @Override
@@ -112,7 +106,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        mMap.setMyLocationEnabled(false);
+        mMap.setMyLocationEnabled(true);
+
+//        LatLng myloc = new LatLng(locationManager.getLastKnownLocation(""))
+
+//        autocompleteFragment.setBoundsBias(new LatLngBounds(
+//                new LatLng(-33.880490, 151.184363),
+//                new LatLng(-33.858754, 151.229596)));
+
+//                new LatLng(locationManager.getLastKnownLocation("gps").getLatitude(),myLocation.getLongitude()),
+//                new LatLng(myLocation.getLatitude() + 0.01,myLocation.getLongitude() + 0.01)));
 
     }
 
@@ -322,11 +325,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
+
+
     //*************************************************Places API Code**************************************************************
 
     @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+        Log.d("onConnectionFailed", "triggered");
+    }
+
+
+    @Override
     public void onPlaceSelected(Place place) {
-        Log.d("Place Selected: ", (String) place.getName());
+        Log.d("Place Selected : ", (String) place.getName());
+
+        LatLng marker = place.getLatLng();
+        mMap.addMarker(new MarkerOptions().position(marker).title((String) place.getName()));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(marker, MY_LOC_ZOOM_FACTOR));
+
     }
 
     @Override
@@ -337,22 +353,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Toast.LENGTH_SHORT).show();
     }
 
-
-
-
-//    PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
-//            getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
-//
-//    autocompleteFragment.setBoundsBias(new LatLngBounds(
-//            new LatLng(-33.880490, 151.184363),
-//
-//    @Override
-//    public void onPlaceSelected(Place place) {
-//         Log.d("onPlaceSelected", place.toString());
-//    }
-//
-//    @Override
-//    public void onError(Status status) {
-//
-//    }
 }

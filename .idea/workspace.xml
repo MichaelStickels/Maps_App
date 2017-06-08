@@ -39,9 +39,19 @@
       <file leaf-file-name="MapsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/stickelsm3342/maps_app/MapsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37346438">
-              <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-              <folding />
+            <state vertical-scroll-proportion="0.22836879">
+              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+              <folding>
+                <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+                <element signature="class#8795:10596" expanded="false" />
+                <element signature="method#onStatusChanged#0;class#8795:10596" expanded="false" />
+                <element signature="class#10650:11564" expanded="false" />
+                <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,8 +59,8 @@
       <file leaf-file-name="activity_maps.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.018182">
+              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -2447,9 +2457,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
@@ -2471,11 +2479,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="2a2e2e3" />
+    <property name="device.picker.selection" value="2a216f4" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../android-samples/tutorials/CurrentPlaceDetailsOnMap" />
@@ -2783,15 +2793,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32369298" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16462736" sideWeight="0.52132195" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.516129" sideWeight="0.47867805" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15239155" sideWeight="0.5234541" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15239155" sideWeight="0.47654584" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2811,7 +2822,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2828,7 +2838,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2837,7 +2847,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#8795:10596" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#8795:10596" expanded="false" />
+            <element signature="class#10650:11564" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2888,7 +2908,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#8795:10596" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#8795:10596" expanded="false" />
+            <element signature="class#10650:11564" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2939,7 +2969,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#8795:10596" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#8795:10596" expanded="false" />
+            <element signature="class#10650:11564" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2990,7 +3030,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#8795:10596" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#8795:10596" expanded="false" />
+            <element signature="class#10650:11564" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3041,7 +3091,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#8795:10596" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#8795:10596" expanded="false" />
+            <element signature="class#10650:11564" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3092,7 +3152,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#8795:10596" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#8795:10596" expanded="false" />
+            <element signature="class#10650:11564" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3143,7 +3213,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#8795:10596" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#8795:10596" expanded="false" />
+            <element signature="class#10650:11564" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3245,8 +3325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.018182">
+          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -3256,9 +3336,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/stickelsm3342/maps_app/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37346438">
-          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-          <folding />
+        <state vertical-scroll-proportion="0.22836879">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <element signature="method#mapView#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#clearMap#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
+            <element signature="class#8795:10596" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#8795:10596" expanded="false" />
+            <element signature="class#10650:11564" expanded="false" />
+            <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
