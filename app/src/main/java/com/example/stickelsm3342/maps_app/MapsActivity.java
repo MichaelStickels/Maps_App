@@ -37,6 +37,7 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
+
 import android.support.v4.app.FragmentActivity;
 
 
@@ -57,6 +58,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private int loctoggle = 0;
     private GoogleApiClient mGoogleApiClient;
     PlaceAutocompleteFragment autocompleteFragment;
+    private boolean dropmarkers = false;
 
 
     @Override
@@ -82,11 +84,41 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
 
 
-
-
         // Register a listener to receive callbacks when a place has been selected or an error has
         // occurred.
         autocompleteFragment.setOnPlaceSelectedListener(this);
+
+        tracking();
+
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+
+//        LatLng myloc = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
+
+        Log.d("tag", String.valueOf(locationManager.getAllProviders()));
+
+//        LatLng myloc;
+//        if(locationManager.isProviderEnabled("gps")) {
+//            myloc = new LatLng(locationManager.getLastKnownLocation("gps").getLatitude(), locationManager.getLastKnownLocation("gps").getLatitude());
+//        } else {
+//            myloc = new LatLng(locationManager.getLastKnownLocation("network").getLatitude(), locationManager.getLastKnownLocation("network").getLatitude());
+//        }
+
+
+//        autocompleteFragment.setBoundsBias(new LatLngBounds(
+//                myloc,
+//                new LatLng(myloc.latitude + 0.001, myloc.longitude+ 0.001)));
+
+//        new LatLng(locationManager.getLastKnownLocation("gps").getLatitude(),myLocation.getLongitude()),
+//                new LatLng(myLocation.getLatitude() + 0.01,myLocation.getLongitude() + 0.01)));
 
     }
 
@@ -106,16 +138,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        mMap.setMyLocationEnabled(true);
+        mMap.setMyLocationEnabled(false);
 
-//        LatLng myloc = new LatLng(locationManager.getLastKnownLocation(""))
 
-//        autocompleteFragment.setBoundsBias(new LatLngBounds(
-//                new LatLng(-33.880490, 151.184363),
-//                new LatLng(-33.858754, 151.229596)));
-
-//                new LatLng(locationManager.getLastKnownLocation("gps").getLatitude(),myLocation.getLongitude()),
-//                new LatLng(myLocation.getLatitude() + 0.01,myLocation.getLongitude() + 0.01)));
 
     }
 
@@ -138,12 +163,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     public void trackbutton(View v) {
 
-        if (loctoggle == 0) {
-            tracking();
-            loctoggle = 1;
+        if (dropmarkers == false) {
+            dropmarkers = true;
         } else {
-            stoptracking();
-            loctoggle = 0;
+            dropmarkers = false;
         }
 
     }
@@ -219,6 +242,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         public void onLocationChanged(Location location) {
             //Log.d and Toast that GPS is enabled and working
 
+            //set myLocation
+            myLocation = location;
+
             //Drop a marker
             dropGPSMarker(location.getProvider());
             //Remove the network location updates
@@ -266,6 +292,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         public void onLocationChanged(Location location) {
             //Log.d and Toast that GPS is enabled and working
 
+            //set myLocation
+            myLocation = location;
+
             //Drop a marker on map
             dropNetworkMarker(location.getProvider());
             //Relaunch the network provider, request location Updates (NETWORK)
@@ -286,40 +315,42 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     };
 
     public void dropGPSMarker(String provider){
-        if(locationManager!=null){
-            try{
-                myLocation = locationManager.getLastKnownLocation(provider);
-            }catch(SecurityException e){
-            }
+        if(dropmarkers == true) {
+            if (locationManager != null) {
+                try {
+                    myLocation = locationManager.getLastKnownLocation(provider);
+                } catch (SecurityException e) {
+                }
 
-        }
-        if(myLocation == null){
-            //display a message
-        }
-        else{
-            userlocation = new LatLng(myLocation.getLatitude(),myLocation.getLongitude());
-            CameraUpdate update = CameraUpdateFactory.newLatLngZoom(userlocation, MY_LOC_ZOOM_FACTOR);
-            Circle marker = mMap.addCircle((new CircleOptions().center(userlocation)).radius(1).strokeColor(Color.GREEN).fillColor(Color.GREEN));
-            mMap.animateCamera(update);
+            }
+            if (myLocation == null) {
+                //display a message
+            } else {
+                userlocation = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
+                CameraUpdate update = CameraUpdateFactory.newLatLngZoom(userlocation, MY_LOC_ZOOM_FACTOR);
+                Circle marker = mMap.addCircle((new CircleOptions().center(userlocation)).radius(1).strokeColor(Color.GREEN).fillColor(Color.GREEN));
+                mMap.animateCamera(update);
+            }
         }
 
     }
     public void dropNetworkMarker(String provider){
-        if(locationManager!=null){
-            try{
-                myLocation = locationManager.getLastKnownLocation(provider);
-            }catch(SecurityException e){
-            }
+        if(dropmarkers == true) {
+            if (locationManager != null) {
+                try {
+                    myLocation = locationManager.getLastKnownLocation(provider);
+                } catch (SecurityException e) {
+                }
 
-        }
-        if(myLocation == null){
-            //display a message
-        }
-        else{
-            userlocation = new LatLng(myLocation.getLatitude(),myLocation.getLongitude());
-            CameraUpdate update = CameraUpdateFactory.newLatLngZoom(userlocation, MY_LOC_ZOOM_FACTOR);
-            Circle marker = mMap.addCircle((new CircleOptions().center(userlocation)).radius(1).strokeColor(Color.RED).fillColor(Color.RED));
-            mMap.animateCamera(update);
+            }
+            if (myLocation == null) {
+                //display a message
+            } else {
+                userlocation = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
+                CameraUpdate update = CameraUpdateFactory.newLatLngZoom(userlocation, MY_LOC_ZOOM_FACTOR);
+                Circle marker = mMap.addCircle((new CircleOptions().center(userlocation)).radius(1).strokeColor(Color.RED).fillColor(Color.RED));
+                mMap.animateCamera(update);
+            }
         }
 
     }
