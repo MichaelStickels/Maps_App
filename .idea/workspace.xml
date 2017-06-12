@@ -40,8 +40,8 @@
       <file leaf-file-name="MapsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/stickelsm3342/maps_app/MapsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.022764228">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.77272725">
+              <caret line="110" column="53" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
               <folding>
                 <element signature="e#4052#4077#0" expanded="false" />
                 <element signature="method#onMapReady#0;class#MapsActivity#0" expanded="false" />
@@ -50,10 +50,10 @@
                 <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
                 <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
                 <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
-                <element signature="class#10132:11998" expanded="false" />
-                <element signature="method#onLocationChanged#0;class#10132:11998" expanded="false" />
-                <element signature="method#onStatusChanged#0;class#10132:11998" expanded="false" />
-                <element signature="class#12052:13031" expanded="false" />
+                <element signature="class#9511:11377" expanded="false" />
+                <element signature="method#onLocationChanged#0;class#9511:11377" expanded="false" />
+                <element signature="method#onStatusChanged#0;class#9511:11377" expanded="false" />
+                <element signature="class#11431:12410" expanded="false" />
                 <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
                 <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
               </folding>
@@ -63,14 +63,14 @@
       </file>
       <file leaf-file-name="activity_maps.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -2462,6 +2462,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2482,15 +2483,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="b1c3bc44" />
+    <property name="device.picker.selection" value="3a2fb61" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../android-samples/tutorials/CurrentPlaceDetailsOnMap" />
@@ -2798,15 +2798,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32369298" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15239155" sideWeight="0.5234541" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28476083" sideWeight="0.47654584" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2836485" sideWeight="0.52558637" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2836485" sideWeight="0.47441363" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2860,10 +2860,10 @@
             <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#10132:11998" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#10132:11998" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#10132:11998" expanded="false" />
-            <element signature="class#12052:13031" expanded="false" />
+            <element signature="class#9511:11377" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#9511:11377" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#9511:11377" expanded="false" />
+            <element signature="class#11431:12410" expanded="false" />
             <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
           </folding>
@@ -2871,14 +2871,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -2925,10 +2925,10 @@
             <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#10132:11998" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#10132:11998" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#10132:11998" expanded="false" />
-            <element signature="class#12052:13031" expanded="false" />
+            <element signature="class#9511:11377" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#9511:11377" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#9511:11377" expanded="false" />
+            <element signature="class#11431:12410" expanded="false" />
             <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
           </folding>
@@ -2936,14 +2936,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -2990,10 +2990,10 @@
             <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#10132:11998" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#10132:11998" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#10132:11998" expanded="false" />
-            <element signature="class#12052:13031" expanded="false" />
+            <element signature="class#9511:11377" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#9511:11377" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#9511:11377" expanded="false" />
+            <element signature="class#11431:12410" expanded="false" />
             <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
           </folding>
@@ -3001,14 +3001,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -3055,10 +3055,10 @@
             <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#10132:11998" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#10132:11998" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#10132:11998" expanded="false" />
-            <element signature="class#12052:13031" expanded="false" />
+            <element signature="class#9511:11377" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#9511:11377" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#9511:11377" expanded="false" />
+            <element signature="class#11431:12410" expanded="false" />
             <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
           </folding>
@@ -3066,14 +3066,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -3120,10 +3120,10 @@
             <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#10132:11998" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#10132:11998" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#10132:11998" expanded="false" />
-            <element signature="class#12052:13031" expanded="false" />
+            <element signature="class#9511:11377" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#9511:11377" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#9511:11377" expanded="false" />
+            <element signature="class#11431:12410" expanded="false" />
             <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
           </folding>
@@ -3131,14 +3131,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -3185,10 +3185,10 @@
             <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#10132:11998" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#10132:11998" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#10132:11998" expanded="false" />
-            <element signature="class#12052:13031" expanded="false" />
+            <element signature="class#9511:11377" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#9511:11377" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#9511:11377" expanded="false" />
+            <element signature="class#11431:12410" expanded="false" />
             <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
           </folding>
@@ -3196,14 +3196,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -3250,10 +3250,10 @@
             <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#10132:11998" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#10132:11998" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#10132:11998" expanded="false" />
-            <element signature="class#12052:13031" expanded="false" />
+            <element signature="class#9511:11377" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#9511:11377" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#9511:11377" expanded="false" />
+            <element signature="class#11431:12410" expanded="false" />
             <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
           </folding>
@@ -3261,14 +3261,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -3357,20 +3357,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/stickelsm3342/maps_app/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.022764228">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.77272725">
+          <caret line="110" column="53" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
           <folding>
             <element signature="e#4052#4077#0" expanded="false" />
             <element signature="method#onMapReady#0;class#MapsActivity#0" expanded="false" />
@@ -3379,10 +3379,10 @@
             <element signature="method#trackbutton#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#stoptracking#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#tracking#0;class#MapsActivity#0" expanded="false" />
-            <element signature="class#10132:11998" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#10132:11998" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#10132:11998" expanded="false" />
-            <element signature="class#12052:13031" expanded="false" />
+            <element signature="class#9511:11377" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#9511:11377" expanded="false" />
+            <element signature="method#onStatusChanged#0;class#9511:11377" expanded="false" />
+            <element signature="class#11431:12410" expanded="false" />
             <element signature="method#dropGPSMarker#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#dropNetworkMarker#0;class#MapsActivity#0" expanded="false" />
           </folding>

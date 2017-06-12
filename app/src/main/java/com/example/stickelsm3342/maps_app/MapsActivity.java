@@ -101,24 +101,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             return;
         }
 
-//        LatLng myloc = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
-
-        Log.d("tag", String.valueOf(locationManager.getAllProviders()));
-
-//        LatLng myloc;
-//        if(locationManager.isProviderEnabled("gps")) {
-//            myloc = new LatLng(locationManager.getLastKnownLocation("gps").getLatitude(), locationManager.getLastKnownLocation("gps").getLatitude());
-//        } else {
-//            myloc = new LatLng(locationManager.getLastKnownLocation("network").getLatitude(), locationManager.getLastKnownLocation("network").getLatitude());
-//        }
-
 
 //        autocompleteFragment.setBoundsBias(new LatLngBounds(
-//                myloc,
-//                new LatLng(myloc.latitude + 0.001, myloc.longitude+ 0.001)));
+//                new LatLng(-33.880490, 151.184363),
+//                new LatLng(-33.858754, 151.229596)));
 
-//        new LatLng(locationManager.getLastKnownLocation("gps").getLatitude(),myLocation.getLongitude()),
-//                new LatLng(myLocation.getLatitude() + 0.01,myLocation.getLongitude() + 0.01)));
+        autocompleteFragment.setBoundsBias(new LatLngBounds(
+                new LatLng(32.960984, -117.190613),
+                new LatLng(32.962307, -117.190050)));
+
+
 
     }
 
